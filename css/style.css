@@ -24,3 +24,7 @@ body {
 .title {
     color: rgb(176, 64, 23);
 }
+
+.error-message {
+    display: none;
+}

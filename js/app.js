@@ -5,10 +5,12 @@ const searchDrink = () => {
     searchInput.value = "";
 
     if (searchText == "") {
-        console.log('mmmm');
+        document.getElementById('error').style.display = 'block';
     }
 
     else {
+
+        document.getElementById('error').style.display = 'none';
         //load api
 
         const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchText}`
